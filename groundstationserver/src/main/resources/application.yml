@@ -1,0 +1,15 @@
+spring:
+  application:
+      name: GroundStationServer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/plans
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
